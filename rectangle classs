@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class rectangle   // creating class with basic element( length and breadth are in every recangle) 
+{
+    private:
+    int length;
+    int breadth;
+    public:
+   rectangle(int l, int b)  // this is contructor(having same name as class name)
+   {
+    length=l;
+    breadth=b;
+   }
+   int area() // this is function
+   {
+    return length*breadth;
+   }
+   void changelength(int l) // this is function
+   {
+    length=l;
+   }
+};
+
+int main()
+{
+    rectangle r(10,5);
+    r.area();
+    r.changelength(20);
+}
